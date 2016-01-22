@@ -2,6 +2,7 @@
 .w3-text-indiagreen{color:#138808 !important}.w3-indiagreen{color:#ffffff !important;background-color:#138808 !important}
 .w3-text-navyblue{color:#000080 !important}.w3-navyblue{color:#ffffff !important;background-color:#000080 !important}
 .w3-text-bright-navyblue{color:#1974d2 !important}.w3-india-green{color:#ffffff !important;background-color:#1974d2 !important}
+.w3-margin-left-64{margin-left:64px !important}.w3-margin-right-64{margin-right:64px !important}
 
 @media screen {
     body {
@@ -15,5 +16,25 @@
 
     body > footer {
         box-shadow: 0px -5px 10px #aaa;
+    }
+}
+
+@media print {
+    @page {
+        margin-bottom: 0.5in;
+        margin-left: 0.5in;
+        margin-right: 0.5in;
+        margin-top: 0.5in;
+        size: A4;
+    }
+    a[href^="mailto"]:after,
+    a[href^="tel"]:after {
+        content: "";
+    }
+    body>header {
+        display: none;
+    }
+    body>footer {
+        display: none;
     }
 }
