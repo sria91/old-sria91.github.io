@@ -95,6 +95,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Add box-shadow to header and footer.
+ */
+
+body > header {
+    box-shadow: 0px 5px 10px #aaa;
+}
+
+body > footer {
+    box-shadow: 0px -5px 10px #aaa;
+}
+
+
 
 
 
