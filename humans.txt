@@ -8,7 +8,7 @@
 # THANKS
 
     HTML5 Boilerplate Team
-    J.E.Refsnes for W3.CSS
+    Jan Egil and Borge Refsnes for W3.CSS
 
 # TECHNOLOGY COLOPHON
 
