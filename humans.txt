@@ -13,5 +13,6 @@
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css, W3.CSS
+    AngularJS, Normalize.css, W3.CSS
     Google Analytics
+    

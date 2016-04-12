@@ -1,66 +1,36 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html ng-app="wesume" lang="en-IN">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Srikanth Anantharam</title>
+		<meta name="author" content="Srikanth Anantharam" />
         <meta name="description" content="Srikanth Anantharam's Portfolio Website">
         <meta name="keywords" content="IoT, Internet of Things, Programming, Embedded Systems, Digital Signal Processing, Operations Research, Robotics, Artificial Intelligence, Algorithms, Computer Vision, Image Processing, Data Structure, Control Systems, Automation, Research, Design, and Development">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="w3css/w3.min.css">
-        <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/w3css/w3.min.css">
+        <!--<script src="/js/vendor/modernizr-2.8.3.min.js"></script>-->
+		<script src="/js/vendor/angular-1.1.5.min.js"></script>
+		<script src="/js/wesume.js"></script>
+		<script src="/js/controllers.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="w3-topnav w3-indiasaffron">
-            <h1 class="w3-margin-left w3-left"><b>Wesume</b></h1>
-            <nav class="w3-topnav w3-large w3-margin-right w3-right">
-                <b><a style="border-bottom: 3px solid #fff !important" href="/">About</a></b>
-                <b><a href="/resume.html">Resume</a></b>
-                <b><a href="/publications.html">Publications</a></b>
-                <b><a href="/gallery.html">Gallery</a></b>
-                <b><a href="/projects.html">Projects</a></b>
-            </nav>
-        </header>
-
-        <div class="w3-row w3-margin">
-            <section id="about" class="w3-margin w3-card-4">
-                <h2 class="w3-container w3-center w3-navyblue"><strong>Srikanth A</strong>nantharam</h2>
-                <div class="w3-container">
-                    <p class="w3-center">
-                        <img src="/img/SrikanthAnantharam.jpg" alt="Srikanth Anantharam" width="20%" height="20%" />
-                    </p>
-                    <p class="w3-center">
-                        Srikanth Anantharam is a seasoned embedded Linux developer and <abbr title="Internet of Things">IoT</abbr> enthusiast from Bengaluru.
-                    </p>
-                </div>
-            </section>
-        </div>
-
-        <footer class="w3-container w3-center w3-indiagreen" itemscope itemtype="http://schema.org/Person">
-            <p>
-                <strong>Contact Srikanth:</strong><br />
-                Mobile: <a itemprop="telephone" href="tel:+917204350429">(+91) 7204-350429</a><br />
-                E-mail: <a itemprop="email" href="mailto:sria91@gmail.com">sria91@gmail.com</a><br />
-                <a itemprop="sameAs" href="https://web.facebook.com/sria91" target="_blank" title="Srikanth Anantharam's Facebook">Facebook</a>&nbsp;&nbsp;<b>|</b>&nbsp;
-                <a itemprop="sameAs" href="https://in.linkedin.com/in/srikanthanantharam" target="_blank"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="Srikanth Anantharam's LinkedIn" title="Srikanth Anantharam's LinkedIn"></a>&nbsp;&nbsp;<b>|</b>&nbsp;
-                <a itemprop="sameAs" href="https://www.github.com/sria91" target="_blank" title="Srikanth Anantharam's GitHub">GitHub</a>&nbsp;&nbsp;<b>|</b>&nbsp;
-                <a itemprop="sameAs" href="https://independentresearcher.academia.edu/SrikanthAnantharam" target="_blank" title="Srikanth Anantharam's Academia">Academia</a>&nbsp;&nbsp;<b>|</b>&nbsp;
-                <a itemprop="sameAs" href="http://www.sololearn.com/Profile/98422" target="_blank" title="Srikanth Anantharam's SoloLearn">SoloLearn</a>
-            </p>
-            <p><small class="w3-small">
-                Copyright &copy; <span itemprop="name">Srikanth Anantharam</span>. All Rights Reserved.<br />
-                Website designed, developed and maintained by Synapse Research Innovation.
-            </small></p>
-        </footer>
+		<ng-include src="'html/header.html'"></ng-include>
+		
+		<div style="position:relative">
+		    <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+		</div>
+		
+		<ng-include src="'html/footer.html'"></ng-include>
 
         <!-- jQuery
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -80,3 +50,4 @@
         </script>
     </body>
 </html>
+
