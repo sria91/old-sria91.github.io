@@ -20,4 +20,3 @@ function GalleryCtrl($scope, $http) {
 
 function ProjectsCtrl($scope, $http) {
 }
-

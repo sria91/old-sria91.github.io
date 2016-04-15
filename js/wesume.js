@@ -6,7 +6,7 @@
 'use strict';
 
 // ng-app initialization
-var app = angular.module('wesume', []).
+var app = angular.module('wesume', ['ngRoute']).
 	config(['$routeProvider', function ($routeProvider) {
 		$routeProvider.
 			when('/', {
@@ -35,15 +35,13 @@ var app = angular.module('wesume', []).
 				activetab: 'projects'
 			}).
 			otherwise({ redirectTo: '/' });
-	}]).run(['$rootScope', '$http', '$browser', '$timeout', '$route', function ($scope, $http, $browser, $timeout, $route) {
-
+	}]).
+	run(['$rootScope', '$http', '$browser', '$timeout', '$route', function ($scope, $http, $browser, $timeout, $route) {
 		$scope.$on("$routeChangeSucess", function (scope, next, current) {
 			$scope.$part = $route.current.activetab;
 		});
-
 	}]);
 
 app.config(['$locationProvider', function ($location) {
 	$location.hashPrefix('!');
 }]);
-
