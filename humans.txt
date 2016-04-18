@@ -3,16 +3,15 @@
 
 # TEAM
 
-    Srikanth Anantharam -- Founder, Programmer and Web Master -- sria91
+	Srikanth Anantharam -- Admin, Founder, Developer and Consultant -- sria91
 
 # THANKS
 
-    HTML5 Boilerplate Team
-    Jan Egil and Borge Refsnes for W3.CSS
+	HTML5 Boilerplate Team
+	Jan Egil and Borge Refsnes for W3.CSS
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    AngularJS, Normalize.css, W3.CSS
-    Google Analytics
-    
+	CSS3, HTML5
+	Normalize.css, W3.CSS
+	AngularJS, Google Analytics, DISQUS

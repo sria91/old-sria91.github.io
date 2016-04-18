@@ -1,29 +1,29 @@
 <!doctype html>
 <html ng-app="wesume" lang="en-IN">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Srikanth Anantharam</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Srikanth Anantharam</title>
 		<meta name="author" content="Srikanth Anantharam" />
-        <meta name="description" content="Srikanth Anantharam's Portfolio Website">
-        <meta name="keywords" content="IoT, Internet of Things, Programming, Embedded Systems, Digital Signal Processing, Operations Research, Robotics, Artificial Intelligence, Algorithms, Computer Vision, Image Processing, Data Structure, Control Systems, Automation, Research, Design, and Development">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Srikanth Anantharam's Portfolio Website">
+		<meta name="keywords" content="IoT, Internet of Things, Programming, Embedded Systems, Digital Signal Processing, Operations Research, Robotics, Artificial Intelligence, Algorithms, Computer Vision, Image Processing, Data Structure, Control Systems, Automation, Research, Design, and Development">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/w3css/w3.min.css">
-        <!--<script src="/js/vendor/modernizr-2.8.3.min.js"></script>-->
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" media="screen" href="/w3css/w3.min.css">
+		<!--<script src="/js/vendor/modernizr-2.8.3.min.js"></script>-->
 		<script src="/js/vendor/angular-1.5.3.min.js"></script>
 		<script src="/js/vendor/angular-route-1.5.3.min.js"></script>
 		<script src="/js/wesume.js"></script>
 		<script src="/js/controllers.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
 		<ng-include src="'html/header.html'"></ng-include>
 		
@@ -33,21 +33,37 @@
 		
 		<ng-include src="'html/footer.html'"></ng-include>
 
-        <!-- jQuery
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script> -->
+		<!-- jQuery
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script> -->
 
-        <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-72518339-1','auto');ga('require','linkid');
-            ga('require','displayfeatures');ga('send','pageview');
-        </script>
-    </body>
+		<!-- Google Analytics -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='https://www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-72518339-1','auto');ga('require','linkid');
+			ga('require','displayfeatures');ga('send','pageview');
+		</script>
+
+		<!-- DISQUS -->
+		<script>
+			(function() {
+			var d = document, s = d.createElement('script');
+
+			s.src = '//sria91.disqus.com/embed.js';
+
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+		</script>
+
+		<script id="dsq-count-scr" src="//sria91.disqus.com/count.js" async></script>
+
+		<noscript>Please enable JavaScript to view the Website.</noscript>
+	</body>
 </html>
