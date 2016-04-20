@@ -26,11 +26,11 @@
 		<![endif]-->
 
 		<ng-include src="'html/header.html'"></ng-include>
-		
+
 		<div style="position:relative">
 		    <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
 		</div>
-		
+
 		<ng-include src="'html/footer.html'"></ng-include>
 
 		<!-- jQuery
@@ -53,15 +53,14 @@
 		<!-- DISQUS -->
 		<script>
 			(function() {
-			var d = document, s = d.createElement('script');
+				var d = document, s = d.createElement('script');
 
-			s.src = '//sria91.disqus.com/embed.js';
+				s.src = '//sria91.disqus.com/embed.js';
 
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
 			})();
 		</script>
-
 		<script id="dsq-count-scr" src="//sria91.disqus.com/count.js" async></script>
 
 		<noscript>Please enable JavaScript to view the Website.</noscript>
