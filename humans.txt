@@ -12,6 +12,6 @@
 
 # TECHNOLOGY COLOPHON
 
-	CSS3, HTML5
+	CSS3, HTML5, JS
 	Normalize.css, W3.CSS
 	AngularJS, Google Analytics, DISQUS
