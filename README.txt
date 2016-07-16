@@ -1,4 +1,2 @@
-Srikanth Anantharam's Portfolio Website
-
+Srikanth Anantharam's Wesume
 Copyright © Srikanth Anantharam. All Rights Reserved.
-
