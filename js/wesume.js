@@ -30,10 +30,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
 			controller: GalleryCtrl,
 			activetab: 'gallery'
 		}).
-		when('/projects', {
-			templateUrl: 'html/projects.html',
-			controller: ProjectsCtrl,
-			activetab: 'projects'
+		when('/downloads', {
+			templateUrl: 'html/downloads.html',
+			controller: DownloadsCtrl,
+			activetab: 'downloads'
 		}).
 		otherwise({ redirectTo: '/' });
 }]).
