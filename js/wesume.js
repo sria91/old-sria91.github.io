@@ -1,6 +1,6 @@
 /**
  * Wesume
- * Copyright Srikanth Anantharam. All Rights Reserved.
+ * Copyright Srikanth Anantharam 2016. All Rights Reserved.
  */
 
 'use strict';
