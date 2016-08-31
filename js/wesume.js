@@ -35,6 +35,11 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
 			controller: DownloadsCtrl,
 			activetab: 'downloads'
 		}).
+		when('/discuss', {
+			templateUrl: 'html/discuss.html',
+			controller: DiscussCtrl,
+			activetab: 'discuss'
+		}).
 		otherwise({ redirectTo: '/' });
 }]).
 run(['$rootScope', '$http', '$browser', '$timeout', '$route', function ($scope, $http, $browser, $timeout, $route) {

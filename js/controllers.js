@@ -19,13 +19,15 @@ function GalleryCtrl($scope, $http) {
 }
 
 function DownloadsCtrl($scope, $http) {
+}
+
+function DiscussCtrl($scope, $http) {
 	DISQUS.reset({
 		reload: true,
 		config: function () {
-			this.page.identifier = "sdlw";
-			this.page.url = "https://sria91.github.io/!#/downloads";
-			this.page.title = "Srikanth Anantharam's Projects";
-			this.language = "en-IN";
+			this.page.identifier = "discuss";
+			this.page.url = "https://sria91.github.io/!#/discuss";
+			this.page.title = "Start the discussion";
 		}
 	});
 }
