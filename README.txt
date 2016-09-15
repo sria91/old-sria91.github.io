@@ -1,2 +1,2 @@
 Srikanth Anantharam's Wesume
-Copyright © Srikanth Anantharam 2016. All Rights Reserved.
+Copyright © Srikanth Anantharam <sria91@gmail.com>. All Rights Reserved.

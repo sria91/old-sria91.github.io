@@ -1,33 +1,46 @@
-/**
- * Controllers
- * Copyright Srikanth Anantharam. All Rights Reserved.
+/*
+ * Title		: wesumeControllers
+ * Description	: wesumeControllers initialization
+ * Author		: Srikanth Anantharam
+ * Email		: srikanth_anantharam@linux.com
+ * Created		: 2016
+ * Copyright © Srikanth Anantharam 2016. All Rights Reserved.
  */
 
 'use strict';
 
-// controllers
-function AboutCtrl($scope, $http) {
+var wesumeAppControllers = angular.module('wesumeAppControllers', []).
+controller({
+	'AboutCtrl': ['$scope', '$location', onTabLoad],
+
+	'ResumeCtrl': ['$scope', '$location', onTabLoad],
+
+	'PublicationsCtrl': ['$scope', '$location', onTabLoad],
+
+	'GalleryCtrl': ['$scope', '$location', onTabLoad],
+
+	'DownloadsCtrl': ['$scope', '$location', onTabLoad],
+
+	'DiscussCtrl': ['$scope', '$location', function ($scope, $location) {
+        onTabLoad($scope, $location);
+		DISQUS.reset({
+			reload: true,
+			config: function () {
+				this.page.identifier = $location.path();
+				this.page.url = $location.absUrl();
+				this.page.title = "Start the discussion";
+			}
+		});
+	}],
+
+	// 'LinksCtrl': ['$scope', '$location', onTabLoad],
+});
+
+function DateToString(d) {
+    return (d.toDateString() + ", " + d.toTimeString());
 }
 
-function ResumeCtrl($scope, $http) {
-}
-
-function PublicationsCtrl($scope, $http) {
-}
-
-function GalleryCtrl($scope, $http) {
-}
-
-function DownloadsCtrl($scope, $http) {
-}
-
-function DiscussCtrl($scope, $http) {
-	DISQUS.reset({
-		reload: true,
-		config: function () {
-			this.page.identifier = "discuss";
-			this.page.url = "https://sria91.github.io/!#/discuss";
-			this.page.title = "Start the discussion";
-		}
-	});
+function onTabLoad($scope, $location) {
+	$location.path($location.path().toLowerCase()).replace();
+    document.getElementById("on-tab-load").innerHTML =  '<br />' + DateToString(new Date());
 }
