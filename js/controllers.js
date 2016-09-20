@@ -22,7 +22,7 @@ controller({
 	'DownloadsCtrl': ['$scope', '$location', onTabLoad],
 
 	'DiscussCtrl': ['$scope', '$location', function ($scope, $location) {
-        onTabLoad($scope, $location);
+		onTabLoad($scope, $location);
 		DISQUS.reset({
 			reload: true,
 			config: function () {
@@ -37,10 +37,10 @@ controller({
 });
 
 function DateToString(d) {
-    return (d.toDateString() + ", " + d.toTimeString());
+	return (d.toDateString() + ", " + d.toTimeString());
 }
 
 function onTabLoad($scope, $location) {
 	$location.path($location.path().toLowerCase()).replace();
-    document.getElementById("on-tab-load").innerHTML =  '<br />' + DateToString(new Date());
+	document.getElementById("on-tab-load").innerHTML =  DateToString(new Date());
 }
