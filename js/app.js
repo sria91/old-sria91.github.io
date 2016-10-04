@@ -4,7 +4,7 @@
  * Author		: Srikanth Anantharam
  * Email		: srikanth_anantharam@linux.com
  * Created		: 2016
- * Copyright © Srikanth Anantharam 2016. All Rights Reserved.
+ * © Copyright 2016 By Srikanth Anantharam. All Rights Reserved.
  */
 
 'use strict';
