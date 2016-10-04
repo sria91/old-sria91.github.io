@@ -10,6 +10,7 @@
 	HTML5 Boilerplate Team
 	Jan Egil and Borge Refsnes for W3.CSS
 	Google for the awesome AngularJS
+	Everyone whom I have missed (the list is too long)
 
 # TECHNOLOGY COLOPHON
 
